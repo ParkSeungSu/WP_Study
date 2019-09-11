@@ -22,8 +22,30 @@ background-position: center center;
 	<img alt="" src="https://miro.medium.com/max/640/1*VTbWcFzAwUnEG_al0-Wshw.png">
 	<div style>
 		<button>따아</button>
-		<button>아아</button>
+		 <button>아아</button>
 	</div>
+</center>
+<span>
+	<div><b>Script tag</b></div>
+	<div>HTML 코드에 JAVA코드를 넣어 프로그램이 수행하는 기능을 구현</div>
+</span>
+<span>
+	<div><b>Directive tag</b></div>
+	<div>JSP 페이지에 대한 정보를 JSP container에 보냄</div>
+</span>
+<span>
+	<div><b>Action tag</b></div>
+	<div>XML 형태의 tag, JSP페이지 사이에서 제어 이동</div>
+</span>
+<center><b>
+<%! int count = 1; %>
+<%
+	for(count=1; count<=5;count++){
+		out.println(count + "<br>");
+		}
+	
+%>
+</b>
 </center>
 </body>
 </html>
