@@ -1,3 +1,5 @@
+<%@page import="java.util.Locale"%>
+<%@page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -40,11 +42,15 @@ background-position: center center;
 <center><b>
 <%! int count = 1; %>
 <%
-	for(count=1; count<=5;count++){
-		out.println(count + "<br>");
+	for(count=0; count<=10;count++){
+		if(count % 2 == 0){
+			out.println(count + "<br>");
 		}
+	}
 	
 %>
+<p>Today's date: <%= new Date() %></p>
+<%-- 주석이다~~~ --%>
 </b>
 </center>
 </body>
