@@ -31,7 +31,7 @@
 			%>
 			<div class="col-md-4">
 				<h3><%=product.getPname() %></h3>
-				<img alt="productimg" src="<%=product.getImgUrl()%>" width="350">
+				<img alt="productimg" src="<%=product.getImgUrl()%>" height="250">
 				<p class="font-weight-bolder"><%=product.getDescription() %>
 				<p class="badge badge-primary text-wrap" style="width: 6rem;"><%=product.getUnitPrice() %>원
 			</div>
