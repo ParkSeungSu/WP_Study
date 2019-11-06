@@ -1,5 +1,3 @@
-<footer class ="container">
-	<div class="text-white bg-info">
-		<p>&copy; WebMarket</p>
-	</div>
-</footer> 
+<footer class="container">
+	<p>&copy; WebMarket</p>
+</footer>

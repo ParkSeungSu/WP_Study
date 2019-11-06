@@ -3,39 +3,30 @@ package dto;
 import java.io.Serializable;
 
 public class Product implements Serializable {
-	private static final long serialVersionUID = 1L;
+
+	private static final long serialVersionUID = -4274700572038677000L;
+
 	private String productId;
 	private String pname;
 	private Integer unitPrice;
 	private String description;
-	private String manufacture;
+	private String manufacturer;
 	private String category;
 	private long unitsInStock;
 	private String condition;
-	private String imgUrl;
 
-	public String getImgUrl() {
-		return imgUrl;
-	}
-
-	public void setImgUrl(String imgUrl) {
-		this.imgUrl = imgUrl;
+	public Product() {
+		super();
 	}
 
 	public Product(String productId, String pname, Integer unitPrice) {
-
 		this.productId = productId;
 		this.pname = pname;
 		this.unitPrice = unitPrice;
-
 	}
 
 	public String getProductId() {
 		return productId;
-	}
-
-	public void setProductId(String productId) {
-		this.productId = productId;
 	}
 
 	public String getPname() {
@@ -44,6 +35,10 @@ public class Product implements Serializable {
 
 	public void setPname(String pname) {
 		this.pname = pname;
+	}
+
+	public void setProductId(String productId) {
+		this.productId = productId;
 	}
 
 	public Integer getUnitPrice() {
@@ -62,12 +57,12 @@ public class Product implements Serializable {
 		this.description = description;
 	}
 
-	public String getManufacture() {
-		return manufacture;
+	public String getManufacturer() {
+		return manufacturer;
 	}
 
-	public void setManufacture(String manufacture) {
-		this.manufacture = manufacture;
+	public void setManufacturer(String manufacturer) {
+		this.manufacturer = manufacturer;
 	}
 
 	public String getCategory() {
@@ -93,9 +88,4 @@ public class Product implements Serializable {
 	public void setCondition(String condition) {
 		this.condition = condition;
 	}
-
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
-
 }
